@@ -26,6 +26,6 @@ def get_audio_files_in_root():
 
 if __name__ == "__main__":
     songs = get_audio_files_in_root()
-    with open("song_list.json", "w", encoding="utf-8") as f:
+    with open("song_list004.json", "w", encoding="utf-8") as f:
         json.dump(songs, f, indent=2, ensure_ascii=False)
     print(f"Generated song_list.json with {len(songs)} entries.")
